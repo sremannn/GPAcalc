@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GPA Calculator</title>
+    <link rel = "stylesheet" type = "text/css" href = "main.css">
+    <link rel="stylesheet" href="Skeleton/css/normalize.css">
+    <link rel="stylesheet" href="Skeleton/css/skeleton.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <div class="background">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns main-header">
+                <h2 class="title"> GPA Calculator </h2>
+                <h5 class="subtitle">Calculate your Semester GPA and Cumulative GPA. <b>Warning:</b> Checking your GPA will not increase it. 🙂</h5>
+            </div>
+        </div>
+    </div>
+    <div class="container main">
+        <div class="row card">
+            <div class="twelve columns incard">
+                <div class="row nav">
+                    <div class="six columns selected">
+                        <button class="active" id="GPA">Semester GPA</button>
+                    </div>
+                    <div class="six columns">
+                        <button id="CGPA">Cumulative GPA</button>
+                    </div>
+                </div>
+                <div class="cgpa">
+                    <div class="subject0">
+                        <div class="row">
+                                <div class="six columns">
+                                    <label class="CGPAlabel" for="cgpaTillLastSem">CGPA Till Last Sem</label>
+                                    <input class="u-full-width textfield" placeholder="CGPA Till Last Sem" id="cgpaTillLastSem">
+                                    <p class="warning cgpa1">Nigga you want a scholarship?</p>
+                                </div>
+                                <div class="six columns">
+                                    <label class="CGPAlabel" for="creditsTillLastSem">Credits Till Last Sem</label>
+                                    <input class="u-full-width textfield" placeholder="Credits Till Last Sem" id="creditsTillLastSem">
+                                    <p class="warning creds1">Are you sure my man?</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="six columns">
+                                    <label class="CGPAlabel" for="cgpaThisSem">CGPA This Sem</label>
+                                    <input class="u-full-width textfield" placeholder="CGPA This Sem" id="cgpaThisSem">
+                                    <p class="warning cgpa2">Huh, I don't think so</p>
+                                </div>
+                                <div class="six columns">
+                                    <label class="CGPAlabel" for="creditsThisSem">Credits This Sem</label>
+                                    <input class="u-full-width textfield" placeholder="Credits This Sem" id="creditsThisSem">
+                                    <p class="warning creds2">More subjects != more marks dude</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="row gpaval">
+                        <div class="twelve columns">
+                            <h4 class = "sgpa">10.00<span class="small">/10</span></h4>
+                            <p class="comment">Voila!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gpa">
+                    <div class="subject">
+                            <div class="row">
+                                <div class="six columns">
+                                    <label for="credits">Credits</label>
+                                    <select class="u-full-width field" id="credits1">
+                                        <option hidden>Select credits</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                            </div>
+                            <div class="six columns">
+                                    <label for="grade">Grade</label>
+                                    <select class="u-full-width field" id="grade1">
+                                        <option hidden>Select a grade</option>
+                                        <option value="10">S</option>
+                                        <option value="9">A</option>
+                                        <option value="8">B</option>
+                                        <option value="7">C</option>
+                                        <option value="6">D</option>
+                                        <option value="5">E</option>
+                                        <option value="0">F</option>
+                                        <option value="0">N</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <button class="add">Add Subject</button>
+                        </div>
+                    </div>
+                    <div class="row gpaval">
+                        <div class="twelve columns">
+                            <h4 class = "sgpa">10.00<span class="small">/10</span></h4>
+                            <p class="comment">Voila!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container footer">
+        <p>Made with ❤️ by <a href = "https://github.com/sremannn/">Sreeman Reddy.</a></p>
+    </div>
+</body>
+</html>
